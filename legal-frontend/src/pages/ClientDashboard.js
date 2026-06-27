@@ -38,18 +38,18 @@ setSuggestedLawyers(prev =>
   )
 );
 
-alert("✅ Request Sent Successfully!");
+alert(" Request Sent Successfully!");
 
 window.location.href = "/";
 };
 
-// 🔥 SUBMIT CASE + FIND LAWYERS
+// SUBMIT CASE + FIND LAWYERS
 const handleSubmit = async(e)=>{
 e.preventDefault();
 
 try{
 
-// 1️⃣ SUBMIT CASE
+//  SUBMIT CASE
 const caseResponse = await fetch("http://localhost:5000/submit-case",{
 method:"POST",
 headers:{
@@ -68,13 +68,13 @@ client_email:"demo@gmail.com"
 
 const caseData = await caseResponse.json();
 
-alert("✅ Case Submitted Successfully!");
+alert(" Case Submitted Successfully!");
 
-// 🔥 SAVE CASE ID
+//  SAVE CASE ID
 const newCaseId = caseData.insertId;
 localStorage.setItem("case_id", newCaseId);
 
-// 2️⃣ FIND LAWYERS
+// FIND LAWYERS
 const response = await fetch("http://localhost:5000/find-lawyers",{
 method:"POST",
 headers:{
@@ -89,7 +89,7 @@ budget:form.budget
 
 const lawyers = await response.json();
 
-// 🔥 attach caseId + requested flag
+// attach caseId + requested flag
 const updatedLawyers = lawyers.map(l => ({
 ...l,
 caseId: newCaseId,
@@ -100,7 +100,7 @@ setSuggestedLawyers(updatedLawyers);
 
 }catch(error){
 console.log(error);
-alert("Something went wrong ❌");
+alert("Something went wrong ");
 }
 
 };

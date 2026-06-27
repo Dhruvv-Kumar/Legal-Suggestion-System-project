@@ -29,7 +29,7 @@ return(
 {!lawyer ? (
 
 <p style={{color:"gray"}}>
-No lawyer accepted yet ❌
+No lawyer accepted yet 
 </p>
 
 ) : (

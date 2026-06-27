@@ -32,7 +32,7 @@ function LawyerLogin() {
 
       alert("Login Successful");
 
-      // 🔥 SAVE LAWYER ID (IMPORTANT)
+      // SAVE LAWYER ID (IMPORTANT)
       localStorage.setItem("lawyer_id", data.user.id);
 
       navigate("/lawyer-dashboard");

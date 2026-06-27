@@ -18,7 +18,7 @@ cases_won:"",
 about:""
 });
 
-const navigate = useNavigate(); // 🔥 IMPORTANT
+const navigate = useNavigate(); 
 
 const handleChange = (e) => {
   setForm({ ...form, [e.target.name]: e.target.value });
@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
 
   alert("🎉 Lawyer Registered Successfully!");
 
-  navigate("/"); // ✅ FIXED
+  navigate("/"); 
 };
 
 return (

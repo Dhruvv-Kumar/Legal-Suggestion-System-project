@@ -12,7 +12,7 @@ function Home() {
 
           {/* LEFT SECTION */}
           <div style={leftSection}>
-            <h1 style={title}>⚖ Legal Management System</h1>
+            <h1 style={title}> Legal Management System</h1>
             <p style={subtitle}>
               A Smart Platform Connecting Clients with Verified Legal Experts
             </p>
@@ -57,22 +57,22 @@ function Home() {
           {/* RIGHT INFO BOXES */}
           <div style={rightSection}>
             <div style={infoBox}>
-              <h3>🔐 Secure Authentication</h3>
+              <h3> Secure Authentication</h3>
               <p>Separate login system for Clients and Lawyers with secure database storage.</p>
             </div>
 
             <div style={infoBox}>
-              <h3>⚖ Smart Lawyer Matching</h3>
+              <h3> Smart Lawyer Matching</h3>
               <p>Clients can choose lawyers based on specialization and expertise.</p>
             </div>
 
             <div style={infoBox}>
-              <h3>📩 Lawyer Information</h3>
+              <h3> Lawyer Information</h3>
               <p>Get connected with your Lawyer personally after request acceptance.</p>
             </div>
 
             <div style={infoBox}>
-              <h3>💾 Database Integration</h3>
+              <h3> Database Integration</h3>
               <p>Built using React, Node.js, Express & MySQL for dynamic functionality.</p>
             </div>
           </div>

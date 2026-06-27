@@ -63,7 +63,7 @@ return(
 <p>Budget: ₹{c.budget}</p>
 <p>Status: {c.status}</p>
 
-{/* 🔥 BUTTONS */}
+{/* BUTTONS */}
 {c.status === "Accepted" ? (
   <p style={{color:"lightgreen", fontWeight:"bold"}}>
     ✅ Accepted Case

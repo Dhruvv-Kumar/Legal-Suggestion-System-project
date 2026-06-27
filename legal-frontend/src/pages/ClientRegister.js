@@ -30,7 +30,7 @@ function ClientRegister() {
     await response.text();
 
     //  CLEAN PROFESSIONAL ALERT
-    alert("🎉 Registration Successful!");
+    alert(" Registration Successful!");
 
     //  AUTO REDIRECT TO HOME
     navigate("/");
